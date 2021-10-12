@@ -25,7 +25,14 @@ void Block::MineBlock (uint32_t difficulty) {
         _hash = _CalculateHash();
     } while (_hash.substr(0, difficulty) != str);
 
-    cout << "Block mined : " << _hash << endl;
+    cout << "---" << endl;
+    cout << "Block         : " << _index << endl;
+    cout << "Date          : " << ctime(&_time);
+    cout << "Nonce         : " << _nonce << endl;
+    cout << "Data          : " << _data << endl;
+    cout << "Previous hash : " << previousHash << endl;
+    cout << "Hash          : " << _hash << endl;
+    cout << "---" << endl;
 }
 
 inline string Block::_CalculateHash () const {
