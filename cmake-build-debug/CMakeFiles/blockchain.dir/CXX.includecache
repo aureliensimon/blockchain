@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/aurel/Desktop/CISCO/Github/blockchain/headers/Block.h
+cstdint
+-
+iostream
+-
+ctime
+-
+sstream
+-
+
+C:/Users/aurel/Desktop/CISCO/Github/blockchain/headers/Blockchain.h
+cstdint
+-
+vector
+-
+Block.h
+C:/Users/aurel/Desktop/CISCO/Github/blockchain/headers/Block.h
+
+C:/Users/aurel/Desktop/CISCO/Github/blockchain/src/Blockchain.cpp
+../headers/Blockchain.h
+C:/Users/aurel/Desktop/CISCO/Github/blockchain/headers/Blockchain.h
+
