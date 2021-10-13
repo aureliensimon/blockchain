@@ -1,18 +1,17 @@
-#include <iostream>
 #include "headers/Blockchain.h"
 
 int main() {
 
     Blockchain bchain = Blockchain();
 
-    cout << "Mining block 1 ..." << endl;
-    bchain.addBlock(Block(1, "Data 1"));
+    Transaction t1 = Transaction("Alfred", "Tom", 100);
+    Transaction t2 = Transaction("Smith", "Patrick", 2);
+    Transaction t3 = Transaction("Remy", "Luc", 64);
+    Transaction t4 = Transaction("Luc", "Tom", 784);
 
-    cout << "Mining block 2 ..." << endl;
-    bchain.addBlock(Block(2, "Data 2"));
-
-    cout << "Mining block 3 ..." << endl;
-    bchain.addBlock(Block(2, "Data 3"));
+    bchain.addBlock(Block(1, {t1, t2, t3}));
+    bchain.addBlock(Block(2, {t4}));
+    bchain.addBlock(Block(3, {}));
 
     return 0;
 }

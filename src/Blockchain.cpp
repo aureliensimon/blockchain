@@ -1,8 +1,8 @@
 #include "../headers/Blockchain.h"
 
 Blockchain::Blockchain () {
-    _chain.emplace_back(Block(0, "Genensis Block"));
-    _difficulty = 4;
+    _chain.emplace_back(Block(0, {}));
+    _difficulty = 1;
 }
 
 void Blockchain::addBlock (Block newBlock) {

@@ -15,6 +15,12 @@ ctime
 -
 sstream
 -
+vector
+-
+iterator
+-
+Transaction.h
+C:/Users/aurel/Desktop/CISCO/Github/blockchain/headers/Transaction.h
 
 C:/Users/aurel/Desktop/CISCO/Github/blockchain/headers/Blockchain.h
 cstdint
@@ -24,7 +30,15 @@ vector
 Block.h
 C:/Users/aurel/Desktop/CISCO/Github/blockchain/headers/Block.h
 
-C:/Users/aurel/Desktop/CISCO/Github/blockchain/src/Blockchain.cpp
-../headers/Blockchain.h
+C:/Users/aurel/Desktop/CISCO/Github/blockchain/headers/Transaction.h
+cstdint
+-
+ctime
+-
+iostream
+-
+
+C:/Users/aurel/Desktop/CISCO/Github/blockchain/main.cpp
+headers/Blockchain.h
 C:/Users/aurel/Desktop/CISCO/Github/blockchain/headers/Blockchain.h
 

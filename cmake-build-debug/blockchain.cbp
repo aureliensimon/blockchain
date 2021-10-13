@@ -86,6 +86,9 @@
 		<Unit filename="C:/Users/aurel/Desktop/CISCO/Github/blockchain/headers/Blockchain.h">
 			<Option target="blockchain"/>
 		</Unit>
+		<Unit filename="C:/Users/aurel/Desktop/CISCO/Github/blockchain/headers/Transaction.h">
+			<Option target="blockchain"/>
+		</Unit>
 		<Unit filename="C:/Users/aurel/Desktop/CISCO/Github/blockchain/lib/sha256.cpp">
 			<Option target="blockchain"/>
 		</Unit>
@@ -99,6 +102,9 @@
 			<Option target="blockchain"/>
 		</Unit>
 		<Unit filename="C:/Users/aurel/Desktop/CISCO/Github/blockchain/src/Blockchain.cpp">
+			<Option target="blockchain"/>
+		</Unit>
+		<Unit filename="C:/Users/aurel/Desktop/CISCO/Github/blockchain/src/Transaction.cpp">
 			<Option target="blockchain"/>
 		</Unit>
 		<Unit filename="C:/Users/aurel/Desktop/CISCO/Github/blockchain/CMakeLists.txt">

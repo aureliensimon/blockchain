@@ -7,12 +7,18 @@ CMakeFiles/blockchain.dir/lib/sha256.cpp.obj: \
 CMakeFiles/blockchain.dir/main.cpp.obj: \
  ../headers/Block.h \
  ../headers/Blockchain.h \
+ ../headers/Transaction.h \
  ../main.cpp
 CMakeFiles/blockchain.dir/src/Block.cpp.obj: \
  ../headers/Block.h \
+ ../headers/Transaction.h \
  ../lib/sha256.h \
  ../src/Block.cpp
 CMakeFiles/blockchain.dir/src/Blockchain.cpp.obj: \
  ../headers/Block.h \
  ../headers/Blockchain.h \
+ ../headers/Transaction.h \
  ../src/Blockchain.cpp
+CMakeFiles/blockchain.dir/src/Transaction.cpp.obj: \
+ ../headers/Transaction.h \
+ ../src/Transaction.cpp
