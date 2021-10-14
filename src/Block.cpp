@@ -12,7 +12,7 @@ ostream& operator<<(ostream& os, const vector<T>& v)
     return os;
 }
 
-Block::Block (uint32_t index, vector<Transaction> transactions) : _index(index), _transactions(transactions) {
+Block::Block (vector<Transaction> transactions) : _transactions(transactions) {
     _nonce = -1;
     _time = time(nullptr);
 }
@@ -37,7 +37,7 @@ void Block::MineBlock (uint32_t difficulty) {
     } while (_hash.substr(0, difficulty) != str);
 
     cout << "---" << endl;
-    cout << "Block         : " << _index << endl;
+    cout << "Block           " << endl;
     cout << "Date          : " << ctime(&_time);
     cout << "Nonce         : " << _nonce << endl;
     cout << "Transactions  : " << _transactions << endl;
@@ -49,7 +49,7 @@ void Block::MineBlock (uint32_t difficulty) {
 inline string Block::_CalculateHash () const {
     stringstream stream;
 
-    stream << _index << _time << _transactions << _nonce << previousHash;
+    stream << _time << _transactions << _nonce << previousHash;
 
     return sha256(stream.str());
 }

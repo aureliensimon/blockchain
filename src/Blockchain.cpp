@@ -1,7 +1,7 @@
 #include "../headers/Blockchain.h"
 
 Blockchain::Blockchain () {
-    _chain.emplace_back(Block(0, {}));
+    _chain.emplace_back(Block({}));
     _difficulty = 1;
 }
 

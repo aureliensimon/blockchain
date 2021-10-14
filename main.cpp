@@ -9,9 +9,9 @@ int main() {
     Transaction t3 = Transaction("Remy", "Luc", 64);
     Transaction t4 = Transaction("Luc", "Tom", 784);
 
-    bchain.addBlock(Block(1, {t1, t2, t3}));
-    bchain.addBlock(Block(2, {t4}));
-    bchain.addBlock(Block(3, {}));
+    bchain.addBlock(Block({t1, t2, t3}));
+    bchain.addBlock(Block({t4}));
+    bchain.addBlock(Block({}));
 
     return 0;
 }

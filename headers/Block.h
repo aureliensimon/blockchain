@@ -15,12 +15,11 @@ class Block {
 public:
     string previousHash;
 
-    Block(uint32_t index, vector<Transaction> transactions);
+    Block(vector<Transaction> transactions);
     string GetHash();
     void MineBlock(uint32_t difficulty);
 
 private:
-    uint32_t _index;
     int64_t _nonce;
     vector<Transaction> _transactions;
     string _hash;
